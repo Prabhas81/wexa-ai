@@ -110,9 +110,13 @@ Push to remote: git push -u origin master
 Project Structure
 
 nextjs-devops-assessment/
+
 ├── k8s/
-│   ├── deployment.yaml      # Kubernetes Deployment
+
+│   ├── deployment.yaml  # Kubernetes Deployment
+
 │   └── service.yml          # Kubernetes Service
+
 ├── app/                     # Next.js application
 ├── Dockerfile               # Docker multi-stage build
 ├── package.json
