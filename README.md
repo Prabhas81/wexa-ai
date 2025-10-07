@@ -47,7 +47,6 @@ App available at: http://localhost:3000
 
 Terminal Output Example:
 
-css
 
 > nextjs-devops-assessment@0.1.0 start
 > next start
@@ -75,11 +74,8 @@ Push the Docker image:
 
 
 docker push ghcr.io/prabhas81/wexa-ai:latest
-Push Output Example:
+Push Output Example: latest: digest: sha256:b8df60aabac20e6c73f7196554ac4ab17afde9022ece2585d47bdcd27b4002e0 size: 856
 
-arduino
-
-latest: digest: sha256:b8df60aabac20e6c73f7196554ac4ab17afde9022ece2585d47bdcd27b4002e0 size: 856
 Kubernetes Deployment
 1. Create Docker Registry Secret
 
@@ -98,13 +94,11 @@ kubectl get pods
 kubectl get svc
 Pods Example Output:
 
-sql
 
 NAME                                READY   STATUS    RESTARTS   AGE
 nextjs-deployment-f949ff888-6qktv   1/1     Running   0          31s
 Service Example Output:
 
-pgsql
 
 NAME                  TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
 nextjs-service        NodePort    10.96.0.100     <none>        3000:30000/TCP   30s
@@ -113,8 +107,7 @@ Open your browser at http://<Node-IP>:<NodePort>
 
 With Minikube, you can run:
 
-bash
-Copy code
+
 minikube service nextjs-service
 Git Workflow
 Stage and commit changes:
